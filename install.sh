@@ -3,16 +3,17 @@ echo "------------------------------------------------"
 echo "|PHP FOR MEEGO Base installer script           |"
 echo "|kinncj AT phpformeego DOT org                 |"
 echo "|This script must run under ROOT user(devel-su)|"
+echo "|The files must be under /root directory       |"
+echo "|Ex: /root/phpformeego/                        |"
 echo "------------------------------------------------"
-mv ../PHPCore/php-5.4.0RC2 .
-mkdir php-5.4.0RC2/temp
-chmod -R 777 php-5.4.0RC2/temp
-export TMPDIR=php-5.4.0RC2/temp
-cd php-5.4.0RC2
+mv /root/phpformeego/PHPCore/php-5.4.0RC2 .
+mkdir /root/phpformeego/Base/php-5.4.0RC2/temp
+chmod -R 777 /root/phpformeego/Base/php-5.4.0RC2/temp
+export TMPDIR=/root/phpformeego/Base/php-5.4.0RC2/temp
+cd /root/phpformeego/Base/php-5.4.0RC2
 ./configure
 make
 make install
-#pear        peardev     pecl        phar        phar.phar   php         php-cgi     php-config  phpize
 ln -s /usr/local/bin/pear /usr/bin/pear
 ln -s /usr/local/bin/peardev /usr/bin/peardev
 ln -s /usr/local/bin/pecl /usr/bin/pecl
