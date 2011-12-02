@@ -10,6 +10,16 @@ mv /root/phpformeego/PHPCore/php-5.4.0RC2 .
 mkdir /root/phpformeego/Base/php-5.4.0RC2/temp
 chmod -R 777 /root/phpformeego/Base/php-5.4.0RC2/temp
 export TMPDIR=/root/phpformeego/Base/php-5.4.0RC2/temp
+cd /root/phpformeego/Base/libxml2
+dpkg -i *.deb
+dpkg -i *.deb
+dpkg -i *.deb
+
+cd /root/phpformeego/Base/gcc
+dpkg -i *.deb
+dpkg -i *.deb
+dpkg -i *.deb
+
 cd /root/phpformeego/Base/php-5.4.0RC2
 ./configure
 make
