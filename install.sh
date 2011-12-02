@@ -4,7 +4,7 @@ echo "|PHP FOR MEEGO Base installer script           |"
 echo "|kinncj AT phpformeego DOT org                 |"
 echo "|This script must run under ROOT user(devel-su)|"
 echo "------------------------------------------------"
-mv ../php-5.4.0RC2 .
+mv ../PHPCore/php-5.4.0RC2 .
 mkdir php-5.4.0RC2/temp
 chmod -R 777 php-5.4.0RC2/temp
 export TMPDIR=php-5.4.0RC2/temp
